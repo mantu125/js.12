@@ -14,7 +14,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId); // false
+// console.log(id === anotherId); // false
 
 // const bigNumber = 1233547896556655 // not bigInt
 // const bigNumber = 1233547896556655n  // bigInt
@@ -40,4 +40,30 @@ const myFunction = function(){
 // console.log(typeof bigNumber); // BigInt
 // console.log( typeof myFunction); // function
 // console.log(typeof Symbol); // function
+
+// ++++++++++++++++++++++++++++++++
+    // Stack (Primitive) Copy , Heap (Non-Primitive) Reference
+
+let myYoutubename="Mantudotcom" 
+
+let anothername=myYoutubename
+anothername="sahdotcom"
+
+// console.log(myYoutubename); // Mantudotcom
+// console.log(anothername); // sahdotcom
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email="mantu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
 
