@@ -49,5 +49,5 @@ function addone(num){
 console.log(addTwo(5)); // error
 const addTwo = function(num){
     return num + 2
-}
+  }
 
